@@ -1,7 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import ExpenseItem from './components/ExpenseItem';
-import ExerciseComponent from './components/ExerciseComponent';
+import Expenses from './components/Expenses.js';
 
 function App() {
   const expenses = [
@@ -29,12 +27,7 @@ function App() {
 
   return (
     <div className="App">
-      <p>Let's get started</p>
-      <ExpenseItem expenseData={expenses[0]}/>
-      <ExpenseItem expenseData={expenses[1]}/>
-      <ExpenseItem expenseData={expenses[2]}/>
-      <ExpenseItem expenseData={expenses[3]}/>
-      <ExerciseComponent />
+     <Expenses expenses={expenses}></Expenses> 
     </div>
   );
 }
